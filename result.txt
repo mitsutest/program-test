@@ -1,0 +1,30 @@
+(base) C:\c_prog>python FixpointTest1.py
+address:10.20.30.1/16  failure period: 0:01:00
+address:10.20.30.1/16  In failure
+address:10.20.30.2/16  failure period: 1:01:00
+address:192.168.1.2/24  In failure
+
+(base) C:\c_prog>python FixpointTest2.py
+address:10.20.30.2/16  failure period: 1:01:00
+address:192.168.1.1/24  In failure
+
+(base) C:\c_prog>python FixpointTest3.py
+address:192.168.1.2/24  failure period: 0:00:30
+address:10.20.30.1/16  overload period: 0:03:00
+address:10.20.30.2/16  overload
+address:192.168.1.1/24  overload period: 0:00:03
+address:192.168.1.2/24  overload period: 0:00:30
+
+(base) C:\c_prog>python FixpointTest4.py
+subnet address:10.20.0.0/16  failure period: 0:01:01
+subnet address:192.168.1.0/24  failure period: 0:01:00
+subnet address:192.168.128.0/24  failure period: 0
+address:10.20.30.1/16  In failure
+address:10.20.30.2/16  failure period: 0:03:00
+address:192.168.1.1/24  failure period: 0:02:00
+address:192.168.1.2/24  failure period: 0:03:00
+address:192.168.128.1/24  In failure
+address:192.168.128.2/24  failure period: 0:02:00
+address:192.168.128.2/24  In failure
+
+(base) C:\c_prog>
